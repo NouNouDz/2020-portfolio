@@ -4,8 +4,7 @@
     animation: dash 5s linear infinite alternate;
   }
   .contact-v2 {
-      position: absolute;
-      top: 0;
+      transform: translateY(-90px);
       width: 100%;
       height: 100vh;
   }
@@ -39,10 +38,18 @@
   .bg {
     background: url("./assets/contactbg.png") no-repeat right top;
     background-size: contain;
-    background-attachment: fixed;
   }
   @keyframes dash {
     to {
       stroke-dashoffset: 0;
+    }
+  }
+  @media (max-width: 800px) {
+    .contact-v2 {
+      height: auto;
+      transform: translateY(0);
+    }
+    .contact-v2 .flex-1 {
+      padding: 20px;
     }
   }

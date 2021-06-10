@@ -7,7 +7,6 @@ import dev from "./assets/developing.png"
 import design from "./assets/design.png"
 import graphic from "./assets/graphic.png"
 import proto from "./assets/proto.png"
-import logo from "./assets/logo.png"
 
 export default function Home () {
     const arr = ["UI/UX Design", "Web Developemnt", "Web Testing", "Graphic Design"]
@@ -23,13 +22,6 @@ export default function Home () {
 
     return(<>
             <div className="header flex flex-center">
-      <button className="menu">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34px" height="30px" viewBox="0 0 34 27" enableBackground="new 0 0 34 27" xmlSpace="preserve" >
-<rect fill="#000" width="34" height="5"/>
-<rect y="11" fill="#000" width="34" height="5"/>
-<rect y="23" fill="#000" width="34" height="5"/>
-</svg>
-      </button>
         <div className="flex-1 flex flex-center">
         <div className="text-box">
             <div className="skill">{arr[ index % arr.length-1 ]}</div>
@@ -155,6 +147,7 @@ export default function Home () {
             <div className="slides">
                 <a href="https://github.com/NouNouDz/Discord-Bot-Web-Template" target="_blank" rel="noreferrer"><img src="https://github.com/NouNouDz/Discord-Bot-Web-Template/raw/master/Screenshot.png" width="300px" height="150px" alt="work"/></a>
             </div>
+            <Link to="/work" className="see-more">See more ...</Link>
       </div>
     </div>
     <div className="contact margin-50" id="contact">
@@ -166,12 +159,5 @@ export default function Home () {
               <span>CONTACT</span>
             </Link>
     </div>
-    <footer className="footer">
-      <div className="links"></div>
-      <h1 className="title">
-        <img src={logo} alt="logo" style={{background: "#000",padding: "10px",height: "50px",borderRadius: "10px"}}/>
-        Abdennour Mez <small style={{"fontWeight": "100"}}>- © All Rights Reserved.</small>
-      </h1>
-    </footer>
     </>)
 } 

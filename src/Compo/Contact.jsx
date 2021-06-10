@@ -2,11 +2,11 @@ import "./Contact.css"
 export default function Contact () {
     const handle = (e) => {
         e.preventDefault();
-
+        alert("Contact form not working now :( \n You can contact me by my social media")
     }
     return(<>
       <h1 align="center">
-        Lets keep in toutch !
+        Let's keep in toutch !
       </h1>
             <div className="contact-v2 flex">
                 <div className="flex-1 flex-center flex">

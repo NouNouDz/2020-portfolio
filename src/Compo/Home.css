@@ -109,13 +109,6 @@
     stroke: #ccc;
     position: absolute;
   }
-  footer {
-    background: #ffd369;
-    padding: 50px;
-  }
-  footer .title::before {
-    background: #ffffff;
-  }
   .menu {
     display: none;
     background: none;
@@ -178,42 +171,26 @@
   .hand img {
       animation: spin 1s linear infinite alternate;
   }
+  .see-more {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin: 0 auto;
+    background: #ffd369;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
   @keyframes spin {
     0% { -webkit-transform: rotate(-10deg); transform:rotate(-10deg); transform-origin: bottom center;}
     50% { -webkit-transform: rotate(00deg); transform:rotate(0deg); transform-origin: bottom center;}
     100% { -webkit-transform: rotate(10deg); transform:rotate(10deg); transform-origin: bottom center;}
   }
   @media (max-width: 800px) {
-    .menu {
-      display: block;
+  .margin-50 {
+     margin: 5px;
     }
-      .flex {
-          flex-direction: column;
-      }
-      .margin-50 {
-          margin: 5px;
-      }
     .slides {
       width: 100%;
-    }
-  
-    .navbar a.name {
-      font-weight: bolder;
-    flex: none;
-  }
-    .navbar div {
-      display: none;
-      background: #ffd369;
-      position: absolute;
-      width: 100%;
-      top: 50px;
-      border-radius: 20px;
-    }
-    .navbar div a {
-      width: 100%;
-    }
-    .navbar .open {
-      display: block;
     }
     .header .flex-1:last-child {
       display: none;

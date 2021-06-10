@@ -14,13 +14,17 @@ export default function Work () {
             <div className="flex-1 flex flex-center">
                 <div className="work-box work-box-2 flex">
                     <div><img src={men} alt="men" className="avatar"/></div>
+                    <div>
                     <h2>James</h2>
                     <p>He put in an incredible amount of effort on our project and delivered something we're really happy with. Would highly recommend.</p>
+                    </div>
                 </div>
                 <div className="work-box work-box-2 flex">
                     <div><img src={women} alt="women" className="avatar"/></div>
+                    <div>
                     <h2>Jennifer</h2>
-                    <p>rom the first meeting I had absolute trust in Abdennour and am very happy that my expectations were met at all times. Creative work processes, strong product development and a fantastic result.</p>
+                    <p>From the first meeting I had absolute trust in Abdennour and am very happy that my expectations were met at all times. Creative work processes, strong product development and a fantastic result.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -20,7 +20,7 @@
 .work-box-2 * {
     display: inline-block;
 }
-.work-box-2 *:not(:first-child) {
+.work-box-2 div:not(:first-child) {
     width: 80%;
 }
 .work-box-2 div {
