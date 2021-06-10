@@ -167,6 +167,7 @@
   .hand {
     background: #ffd369;
     border-radius: 100%;
+    overflow: hidden;
   }
   .hand img {
       animation: spin 1s linear infinite alternate;
@@ -182,7 +183,6 @@
   }
   @keyframes spin {
     0% { -webkit-transform: rotate(-10deg); transform:rotate(-10deg); transform-origin: bottom center;}
-    50% { -webkit-transform: rotate(00deg); transform:rotate(0deg); transform-origin: bottom center;}
     100% { -webkit-transform: rotate(10deg); transform:rotate(10deg); transform-origin: bottom center;}
   }
   @media (max-width: 800px) {

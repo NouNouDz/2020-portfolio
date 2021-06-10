@@ -10,7 +10,7 @@ function Router() {
   const [ loading, setLoading ] = useState(false)
   const [ open, setOpen ] = useState(false)
 
-  const location = window.location.pathname
+  const location = window.location.hash
   useEffect(() => {
     setLoading(true)
     setTimeout(()=> setLoading(false), 2000)

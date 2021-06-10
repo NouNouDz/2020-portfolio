@@ -1,5 +1,5 @@
 import "./Home.css"
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
 import hand from "./assets/hand.png"
@@ -8,23 +8,30 @@ import design from "./assets/design.png"
 import graphic from "./assets/graphic.png"
 import proto from "./assets/proto.png"
 
-export default function Home () {
-    const arr = ["UI/UX Design", "Web Developemnt", "Web Testing", "Graphic Design"]
-    const [ index, setIndex ] = React.useState(1)
+const arr = ["UI/UX Design", "Web Developemnt", "Web Testing", "Graphic Design"]
+export default class Home extends Component {
+  constructor() {
+    super()
+    this.state = {index: 0};
+  }
+  componentDidMount() {
+    this.intervalID = setInterval(() =>  {
+        this.setState(prevState => {
+          return {index: prevState.index+1}
+        })
+    }, 2*1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
+  }
 
-    React.useEffect(() => {
-        const intervalID = setTimeout(() =>  {
-            setIndex((i) => i++)
-        }, 1500);
-    
-        return () => clearInterval(intervalID);
-    }, []);
-
-    return(<>
+    render() {
+      let text = arr[this.state.index % arr.length];
+       return(<>
             <div className="header flex flex-center">
         <div className="flex-1 flex flex-center">
         <div className="text-box">
-            <div className="skill">{arr[ index % arr.length-1 ]}</div>
+            <div className="skill">{text}</div>
             <h1 style={{"fontSize": "3rem"}}>Abdennour Mez</h1>
             <p>
             Full-Stack Web Developer from Tlemcen, Algeria With more than 5+ years experience in digital world. I love listening to music while i’m working !
@@ -159,5 +166,5 @@ export default function Home () {
               <span>CONTACT</span>
             </Link>
     </div>
-    </>)
+    </>)}
 } 

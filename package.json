@@ -14,10 +14,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build --no-source-maps",
+    "predeploy": "npm run build GENERATE_SOURCEMAP=false",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build --no-source-maps",
+    "build": "react-scripts build GENERATE_SOURCEMAP=false",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

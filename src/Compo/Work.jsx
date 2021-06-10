@@ -36,7 +36,7 @@ export default function Work () {
             </div>
             <div className="flex-1 flex flex-center">
                 <a className="work-box flex flex-center" href="https://github.com/NouNouDz/Discord-Bot-Web-Template" target="_blank" rel="noreferrer" style={{background: "#004687"}}>
-                    <img src="https://cdn.discordapp.com/attachments/800062407354875934/852287164393979905/Frame_3_1.png" alt="work" height="100%" style={{position: "absolute"}}/>
+                    <img src="https://cdn.discordapp.com/attachments/800062407354875934/852287164393979905/Frame_3_1.png" alt="work" height="100%"/>
                 </a>
             </div>
         </div>
