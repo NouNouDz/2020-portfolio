@@ -1,0 +1,36 @@
+.flex-1 {
+    position: relative;
+}
+.work-box {
+    background: #ffd369;
+    border-radius: 25px;
+    height: 250px;
+    width: 90%;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.work-box-2 {
+    height: calc(250px /2 - 10px);
+    border-radius: calc(25px /2);
+    flex-direction: column;
+    align-content: stretch;
+    padding: 10px;
+}
+.work-box-2 * {
+    display: inline-block;
+}
+.work-box-2 *:not(:first-child) {
+    width: 80%;
+}
+.work-box-2 div {
+    padding: 0 10px;
+}
+.avatar {
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+}
+.work-box-2:last-child .avatar {
+    background: #ebebeb;
+}
